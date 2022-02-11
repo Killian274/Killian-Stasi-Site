@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Killian Stasi</title>
+<link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+	<header>
+		<img src="../Images/bannière.jpg" class="photoK" alt="banniere">
+		<a href="Accueil.html" class="logo">Killian Stasi.</a>
+		<div class="menuDeroulant"></div>
+		<nav>
+			<ul>
+				<li><a href="Accueil.html">Accueil</a></li>
+				<li><a href="QuiSuisJe.html">Qui suis-je ?</a></li>
+				<li><a href="MeContacter.html">Me Contacter</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section>
+	<h2>Bienvenue sur mon site !</h2>
+		<p>Je suis Killian Stasi et j'ai 16 ans. Vous trouverez sur mon site les détails de mes services et de ma façon de travailler.</p>
+	</section>
+	<script>
+		window.addEventListener("scroll",function(){
+			const header = document.querySelector('header');
+			header.classList.toggle('sticky', window.scrollY > 0);
+		});
+		
+		const navigation = document.querySelector('nav');
+		document.querySelector('.menuDeroulant').onclick = function(){
+			this.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
